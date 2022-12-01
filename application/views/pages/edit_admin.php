@@ -11,29 +11,17 @@
         <form class="form-horizontal" action="" method="POST">
             <fieldset>
                 <div class="control-group">
-                    <label class="control-label" for="date01">Student Name</label>
+                    <label class="control-label" for="date01">Admin Name</label>
                     <div class="controls">
                         <input type="text" class="input-xlarge" id="date01" name="student_name">
                     </div>
                 </div>
                 <div class="control-group">
-                    <label class="control-label" for="date01">Student Phone</label>
-                    <div class="controls">
-                        <input type="text" class="input-xlarge" id="date01" name="student_phone">
-                    </div>
-                </div>
-                <div class="control-group">
-                    <label class="control-label" for="date01">Student Roll</label>
-                    <div class="controls">
-                        <input type="text" class="input-xlarge" id="date01" name="student_roll">
-                    </div>
-                </div>
-                <!-- <div class="control-group">
-                    <label class="control-label" for="fileInput">File input</label>
+                    <label class="control-label" for="fileInput"> Image</label>
                     <div class="controls">
                         <input class="input-file uniform_on" id="fileInput" type="file">
                     </div>
-                </div> -->
+                </div>
                 <div class="form-actions">
                     <button type="submit" class="btn btn-primary">Add Student</button>
                     <button type="reset" class="btn">Cancel</button>

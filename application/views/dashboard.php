@@ -292,15 +292,14 @@
                         <!-- start: User Dropdown -->
                         <li class="dropdown">
                             <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-                                <i class="halflings-icon white user"></i> Łukasz Holeczek
-                                <span class="caret"></span>
+                                <i class="halflings-icon white user"></i> <?php echo $this->session->userdata("admin_name");?> <span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu">
                                 <li class="dropdown-menu-title">
                                     <span>Account Settings</span>
                                 </li>
                                 <li><a href="#"><i class="halflings-icon user"></i> Profile</a></li>
-                                <li><a href="login.html"><i class="halflings-icon off"></i> Logout</a></li>
+                                <li><a href="<?php base_url(); ?>logout"><i class="halflings-icon off"></i> Logout</a></li>
                             </ul>
                         </li>
                         <!-- end: User Dropdown -->
@@ -320,10 +319,10 @@
             <div id="sidebar-left" class="span2">
                 <div class="nav-collapse sidebar-nav">
                     <ul class="nav nav-tabs nav-stacked main-menu">
-                        <li><a href="<?php echo base_url(); ?>admin-login"><i class="icon-bar-chart"></i><span class="hidden-tablet"> Dashboard</span></a></li>
-                        <li><a href="<?php echo base_url();?>add-student"><i class="icon-envelope"></i><span class="hidden-tablet"> Add Student</span></a></li>
-                        <li><a href="<?php echo base_url();?>manage-student"></i><span class="hidden-tablet"> Manage Student</span></a></li>
-                        <li><a href="<?php echo base_url();?>edit-admin"><i class="icon-eye-open"></i><span class="hidden-tablet"> Admin</span></a></li>
+                        <li><a href="<?php echo base_url(); ?>dashboard"><i class="icon-bar-chart"></i><span class="hidden-tablet"> Dashboard</span></a></li>
+                        <li><a href="<?php echo base_url(); ?>add-student"><i class="icon-envelope"></i><span class="hidden-tablet"> Add Student</span></a></li>
+                        <li><a href="<?php echo base_url(); ?>manage-student"></i><span class="hidden-tablet"> Manage Student</span></a></li>
+                        <li><a href="<?php echo base_url(); ?>edit-admin"><i class="icon-eye-open"></i><span class="hidden-tablet"> Admin</span></a></li>
                     </ul>
                 </div>
             </div>
