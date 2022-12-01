@@ -59,3 +59,4 @@ $route['add-student'] = 'admin/add_student';
 $route['manage-student'] = 'admin/manage_student';
 $route['edit-admin'] = 'admin/edit_admin';
 $route['dashboard'] = 'admin/dashboard';
+$route['save-student'] = 'admin/save_student';

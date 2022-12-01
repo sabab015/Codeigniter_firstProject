@@ -7,25 +7,32 @@
             <a href="#" class="btn-close"><i class="halflings-icon remove"></i></a>
         </div>
     </div>
+    <?php
+    $message = $this->session->userdata("message");
+    if ($message) {
+        echo "<p class= 'alert alert-danger'>$message</p>";
+        $this->session->unset_userdata("message");
+    }
+    ?>
     <div class="box-content">
-        <form class="form-horizontal" action="" method="POST">
+        <form class="form-horizontal" action="<?php base_url(); ?>save-student" method="POST">
             <fieldset>
                 <div class="control-group">
                     <label class="control-label" for="date01">Student Name</label>
                     <div class="controls">
-                        <input type="text" class="input-xlarge" id="date01" name="student_name">
+                        <input type="text" class="input-xlarge" id="date01" name="student_name" required>
                     </div>
                 </div>
                 <div class="control-group">
                     <label class="control-label" for="date01">Student Phone</label>
                     <div class="controls">
-                        <input type="text" class="input-xlarge" id="date01" name="student_phone">
+                        <input type="text" class="input-xlarge" id="date01" name="student_phone" required>
                     </div>
                 </div>
                 <div class="control-group">
                     <label class="control-label" for="date01">Student Roll</label>
                     <div class="controls">
-                        <input type="text" class="input-xlarge" id="date01" name="student_roll">
+                        <input type="text" class="input-xlarge" id="date01" name="student_roll" required>
                     </div>
                 </div>
                 <!-- <div class="control-group">
