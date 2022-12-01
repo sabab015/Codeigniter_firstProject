@@ -1,6 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
+
 class Admin extends CI_Controller
 {
     public function admin_login()
@@ -66,7 +67,23 @@ class Admin extends CI_Controller
     {
         $data = array();
         $data["all_student_info"] = $this->admin_model->all_student_info();
-        $data['admin_main_content'] = $this->load->view('pages/manage_student',$data, true);
+        $data['admin_main_content'] = $this->load->view('pages/manage_student', $data, true);
         $this->load->view('dashboard', $data);
+    }
+
+    public function edit_student($student_id)
+    {
+        $data = array();
+        $data["all_student_info_by_id"] = $this->admin_model->all_student_info_by_id($student_id);
+        $data['admin_main_content'] = $this->load->view('pages/edit_student',$data, true);
+        $this->load->view('pages/edit_student', $data);
+    }
+
+    public function update_student($student_id)
+    {
+        $this->admin_model->update_student_info();
+        $sdata['message'] = "updated successfully";
+        $this->session->set_userdata($sdata);
+        redirect("add_student");
     }
 }
