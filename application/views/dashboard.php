@@ -306,7 +306,6 @@
                     </ul>
                 </div>
                 <!-- end: Header Menu -->
-
             </div>
         </div>
     </div>
@@ -314,7 +313,6 @@
 
     <div class="container-fluid-full">
         <div class="row-fluid">
-
             <!-- start: Main Menu -->
             <div id="sidebar-left" class="span2">
                 <div class="nav-collapse sidebar-nav">
@@ -327,7 +325,6 @@
                 </div>
             </div>
             <!-- end: Main Menu -->
-
             <noscript>
                 <div class="alert alert-block span10">
                     <h4 class="alert-heading">Warning!</h4>

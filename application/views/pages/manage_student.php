@@ -10,105 +10,22 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td class="center">1</td>
-                <td class="center">Masud</td>
-                <td class="center">01954567008</td>
-                <td class="center">123</td>
-                <td>
-                    <a href="" class="btn btn-info">
-                        <i class="halflings-icon white edit"></i>
-                    </a>
-                    <a href="" class="btn btn-info" id="delete">
-                        <i class="halflings-icon white trash"></i>
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td class="center">1</td>
-                <td class="center">Masud</td>
-                <td class="center">01954567008</td>
-                <td class="center">123</td>
-                <td>
-                    <a href="" class="btn btn-info">
-                        <i class="halflings-icon white edit"></i>
-                    </a>
-                    <a href="" class="btn btn-info" id="delete">
-                        <i class="halflings-icon white trash"></i>
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td class="center">1</td>
-                <td class="center">Masud</td>
-                <td class="center">01954567008</td>
-                <td class="center">123</td>
-                <td>
-                    <a href="" class="btn btn-info">
-                        <i class="halflings-icon white edit"></i>
-                    </a>
-                    <a href="" class="btn btn-info" id="delete">
-                        <i class="halflings-icon white trash"></i>
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td class="center">1</td>
-                <td class="center">Masud</td>
-                <td class="center">01954567008</td>
-                <td class="center">123</td>
-                <td>
-                    <a href="" class="btn btn-info">
-                        <i class="halflings-icon white edit"></i>
-                    </a>
-                    <a href="" class="btn btn-info" id="delete">
-                        <i class="halflings-icon white trash"></i>
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td class="center">1</td>
-                <td class="center">Masud</td>
-                <td class="center">01954567008</td>
-                <td class="center">123</td>
-                <td>
-                    <a href="" class="btn btn-info">
-                        <i class="halflings-icon white edit"></i>
-                    </a>
-                    <a href="" class="btn btn-info" id="delete">
-                        <i class="halflings-icon white trash"></i>
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td class="center">1</td>
-                <td class="center">Masud</td>
-                <td class="center">01954567008</td>
-                <td class="center">123</td>
-                <td>
-                    <a href="" class="btn btn-info">
-                        <i class="halflings-icon white edit"></i>
-                    </a>
-                    <a href="" class="btn btn-info" id="delete">
-                        <i class="halflings-icon white trash"></i>
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td class="center">1</td>
-                <td class="center">Masud</td>
-                <td class="center">01954567008</td>
-                <td class="center">123</td>
-                <td>
-                    <a href="" class="btn btn-info">
-                        <i class="halflings-icon white edit"></i>
-                    </a>
-                    <a href="" class="btn btn-info" id="delete">
-                        <i class="halflings-icon white trash"></i>
-                    </a>
-                </td>
-            </tr>
-        </tbody>
+            <?php
+            foreach ($all_student_info as $v_student) 
+            {
 
+            ?>
+            <tr>
+                <td class="center"><?php echo $v_student->student_id?></td>
+                <td class="center"><?php echo $v_student->student_name?></td>
+                <td class="center"><?php echo $v_student->student_phone?></td>
+                <td class="center"><?php echo $v_student->student_roll?></td>
+                <td>
+                    <a href="" class="btn btn-info"><i class="halflings-icon white edit"></i></a>
+                    <a href="" class="btn btn-info" id="delete"><i class="halflings-icon white trash"></i></a>
+                </td>
+            </tr>
+            <?php } ?>
+        </tbody>
     </table>
 </div>

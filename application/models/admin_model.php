@@ -17,10 +17,18 @@ class Admin_model extends CI_Model
         public function save_student_info()
         {
                 $data = array();
-                $data["student_name"] = $this->input->post("student_name",true);
-                $data["student_roll"] = $this->input->post("student_roll",true);
-                $data["student_phone"] = $this->input->post("student_phone",true);
+                $data["student_name"] = $this->input->post("student_name", true);
+                $data["student_roll"] = $this->input->post("student_roll", true);
+                $data["student_phone"] = $this->input->post("student_phone", true);
+                $this->db->insert("student", $data);
+        }
 
-                $this->db->insert("student",$data);
+        public function all_student_info()
+        {
+                $this->db->select("*");
+                $this->db->from("student");
+                $query_result = $this->db->get();
+                $student_info = $query_result->result();
+                return $student_info;
         }
 }
