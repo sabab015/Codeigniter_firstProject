@@ -8,23 +8,28 @@
         </div>
     </div>
     <div class="box-content">
-        <form class="form-horizontal" action="" method="POST">
+        <form class="form-horizontal" action="<?php base_url();?>save-admin" method="POST" enctype="multipart/form-data">
             <fieldset>
                 <div class="control-group">
-                    <label class="control-label" for="date01">Admin Name</label>
+                    <label class="control-label" for="fileInput"> Admin Email</label>
                     <div class="controls">
-                        <input type="text" class="input-xlarge" id="date01" name="student_name">
+                        <input name="email_address" id="fileInput" type="email">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="fileInput"> Password</label>
+                    <div class="controls">
+                        <input name="password" id="fileInput" type="password">
                     </div>
                 </div>
                 <div class="control-group">
                     <label class="control-label" for="fileInput"> Image</label>
                     <div class="controls">
-                        <input class="input-file uniform_on" id="fileInput" type="file">
+                        <input name="admin_image" class="input-file uniform_on" id="fileInput" type="file">
                     </div>
                 </div>
                 <div class="form-actions">
-                    <button type="submit" class="btn btn-primary">Add Student</button>
-                    <button type="reset" class="btn">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Add Admin</button>
                 </div>
             </fieldset>
         </form>

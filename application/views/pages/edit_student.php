@@ -25,7 +25,7 @@
     }
     ?>
     <div class="box-content">
-        <form class="form-horizontal" action="<?php base_url(); ?>update-student" method="POST">
+        <form class="form-horizontal" action="<?php echo base_url()?>update-student" method="POST">
             <fieldset>
                 <div class="control-group">
                     <label class="control-label" for="date01">Student Name</label>
