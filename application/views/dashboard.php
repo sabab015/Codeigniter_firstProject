@@ -321,6 +321,7 @@
                         <li><a href="<?php echo base_url(); ?>add-student"><i class="icon-envelope"></i><span class="hidden-tablet"> Add Student</span></a></li>
                         <li><a href="<?php echo base_url(); ?>manage-student"></i><span class="hidden-tablet"> Manage Student</span></a></li>
                         <li><a href="<?php echo base_url(); ?>edit-admin"><i class="icon-eye-open"></i><span class="hidden-tablet"> Add Admin</span></a></li>
+                        <li><a href="<?php echo base_url(); ?>manage-admin"><i class="icon-eye-open"></i><span class="hidden-tablet"> Manage Admin</span></a></li>
                     </ul>
                 </div>
             </div>

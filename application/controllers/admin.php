@@ -105,4 +105,12 @@ class Admin extends CI_Controller
         $this->session->set_userdata($sdata);
         redirect("manage-student");
     }
+
+    public function manage_admin()
+    {
+        $data = array();
+        $data["all_admin_info"] = $this->admin_model->all_admin_info();
+        $data['admin_main_content'] = $this->load->view('pages/manage_admin', $data, true);
+        $this->load->view('dashboard', $data);
+    }
 }

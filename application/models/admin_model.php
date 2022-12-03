@@ -79,8 +79,17 @@ class Admin_model extends CI_Model
                         $error = $this->upload->display_errors();
                 } else {
                         $sdata = $this->upload->data();
-                        $data['admin_image'] = $config['upload-path'] . $sdata['file_name'];
+                        $data['admin_image'] = $config['upload_path'] . $sdata['file_name'];
                 }
                 $this->db->insert("tbl_admin", $data);
+        }
+
+        public function all_admin_info()
+        {
+                $this->db->select("*");
+                $this->db->from("tbl_admin");
+                $query_result = $this->db->get();
+                $admin_info = $query_result->result();
+                return $admin_info;
         }
 }
