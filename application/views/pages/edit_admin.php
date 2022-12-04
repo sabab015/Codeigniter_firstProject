@@ -8,7 +8,7 @@
         </div>
     </div>
     <div class="box-content">
-        <form class="form-horizontal" action="<?php base_url();?>save-admin" method="POST" enctype="multipart/form-data">
+        <form class="form-horizontal" action="<?php base_url(); ?>save-admin" method="POST" enctype="multipart/form-data">
             <fieldset>
                 <div class="control-group">
                     <label class="control-label" for="fileInput"> Admin Email</label>

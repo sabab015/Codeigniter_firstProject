@@ -75,7 +75,7 @@ class Admin extends CI_Controller
     {
         $data = array();
         $data["all_student_info_by_id"] = $this->admin_model->all_student_info_by_id($student_id);
-        $data['admin_main_content'] = $this->load->view('pages/edit_student',$data, true);
+        $data['admin_main_content'] = $this->load->view('pages/edit_student', $data, true);
         $this->load->view('pages/edit_student', $data);
     }
 

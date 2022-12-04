@@ -7,7 +7,7 @@
             <a href="#" class="btn-close"><i class="halflings-icon remove"></i></a>
         </div>
     </div>
-    
+
     <?php
     $message = $this->session->userdata("message");
     if ($message) {
@@ -15,7 +15,7 @@
         $this->session->unset_userdata("message");
     }
     ?>
-    
+
     <div class="box-content">
         <form class="form-horizontal" action="<?php base_url(); ?>save-student" method="POST">
             <fieldset>

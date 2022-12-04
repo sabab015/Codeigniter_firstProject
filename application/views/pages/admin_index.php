@@ -530,9 +530,7 @@
                     <strong>Status:</strong> Banned
                 </li>
                 <li class="blue">
-                    <a href="#">
-                        <img class="avatar" alt="Kate" src="img/avatar6.jpg">
-                    </a>
+                    <a href="#"><img class="avatar" alt="Kate" src="img/avatar6.jpg"></a>
                     <strong>Name:</strong> Kate Presley<br>
                     <strong>Since:</strong> Jul 25, 2012 11:09<br>
                     <strong>Status:</strong> Updated
@@ -598,11 +596,9 @@
             </div>
         </div>
     </div>
-
 </div>
 
 <div class="row-fluid">
-
     <a class="quick-button metro yellow span2">
         <i class="icon-group"></i>
         <p>Users</p>
@@ -633,11 +629,5 @@
     </a>
 
     <div class="clearfix"></div>
-
 </div>
 <!--/row-->
-
-
-
-</div>
-<!--/.fluid-container-->

@@ -25,7 +25,7 @@
                     <td class="center"><?php echo $v_admin->admin_name ?></td>
                     <td class="center"><?php echo $v_admin->phone ?></td>
                     <td class="center"><?php echo $v_admin->email_address ?></td>
-                    <td class="center"> <img width="50px" height="50px" src="<?php echo base_url() ?>/image/<?php echo $v_admin->admin_image ; ?>"></td>
+                    <td class="center"> <img width="50px" height="50px" src="<?php echo base_url() ?>/image/<?php echo $v_admin->admin_image; ?>"></td>
                 </tr>
             <?php } ?>
         </tbody>
